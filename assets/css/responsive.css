@@ -106,6 +106,9 @@
     }
 }
 @media screen and (max-width:600px) {
+    .common-hero-section .hero-title h2 {
+        font-size:35px;
+    }
     .soon-section .soon-text h1 {
         font-size:25px;
     }
