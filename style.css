@@ -1,0 +1,1131 @@
+@font-face {
+    font-family: georgia, sans-serif;
+    src: url('assets/fonts/georgia/GEORGIA4.TTF');
+}
+@font-face {
+    font-family: georgia, sans-serif;
+    src: url('assets/fonts/georgia/georgia\ bold.ttf');
+}
+@font-face {
+    font-family: georgia, sans-serif;
+    src: url('assets/fonts/georgia/georgia\ bold\ italic.ttf');
+}
+@font-face {
+    font-family: georgia, sans-serif;
+    src: url('assets/fonts/georgia/Georgia\ Regular\ font.ttf');
+}
+body{
+    font-family: georgia, sans-serif;
+}
+
+/* ========================== START HEADER SECTION ======================== */
+header{
+    border-bottom:1px solid #95adbe;
+}
+.top-header{
+    -webkit-display:flex;
+    -o-display:flex;
+    -moz-display:flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.top-header .social-icons ul li{
+    display: inline-block;
+    margin-right: 10px;
+}
+.top-header .social-icons ul li a{
+    display: block;
+    width: 35px;
+    height:35px;
+    line-height: 35px;
+    border:1px solid #95adbe;
+    text-align: center;
+    border-radius:50%;
+    transition:0.3s;
+    -webkit-transition:0.3s;
+    -moz-transition:0.3s;
+    -o-transition:0.3s;
+    color:#95adbe;
+}
+.top-header .social-icons ul li a:hover{
+    background: #95adbe;
+    color:#fff;
+}
+.top-header .logo a {
+    display: block;
+    font-family: georgia,sans-serif;
+    text-transform: uppercase;
+}
+.top-header .logo a h2 {
+    font-weight: 600;
+    color:#000;
+    letter-spacing: 1.5px;
+    font-size: 20px;
+}
+.top-header .logo a h2 span {
+    color:#ff6600;
+}
+.top-header .logo a small {
+    font-size: 13px;
+    color:#95adbe;
+    letter-spacing:4px;
+    line-height: 26px;
+    display: block;
+}
+.top-header .search .search-box {
+    position:relative;    
+}
+.top-header .search .search-box input {
+    width:250px;
+    position:relative;
+    padding:15px;
+    border: 1px  solid #95adbe;
+    outline: none;
+    border-radius:30px;
+    color:#000;
+    background: #ddd;
+}
+.top-header .search .search-box button {
+    position: absolute;
+    top:1px;
+    right:1px;
+    padding:15px;
+    z-index: 1;
+    border: none;
+    outline: none;
+    background: #95adbe;
+    border-radius: 0 30px 30px 0;
+    cursor: pointer;
+}
+.top-header .search .search-box button i{
+    color:#fff;
+    font-size:15px
+}
+/* ========================== END HEADER SECTION ======================== */
+/* ============================== START NAVIGATION SECTION ==================== */
+.header-navigation nav.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background: #797d80;
+	padding: 12px 0;
+    z-index: 99;
+}
+.nav-icon img{
+    width:40px;
+    height: 40px;
+    object-fit: cover;
+    display: block;
+    text-align: left;
+    cursor: pointer;
+    display: none;
+    padding-top: 10px;
+}
+.header-navigation nav{
+    text-align: center;
+    margin-bottom:10px;
+    transition:0.5s;
+    -webkit-transition:0.5s;
+    -moz-transition:0.5s;
+    -o-transition:0.5s;
+}
+.header-navigation nav ul li {
+    display: inline-block;
+    margin:0 16px;
+    position:relative;
+    transition:0.3s;
+    -webkit-transition:0.3s;
+    -o-transition:0.3s;
+    -moz-transition:0.3s;
+    margin-bottom:10px;
+}
+.header-navigation nav ul li::after {
+    content: '';
+    position:absolute;
+    width: 0;
+    height: 2px;
+    background:#95adbe;
+    bottom:-10px;
+    left: 0;
+    transition:0.3s;
+    -webkit-transition:0.3s;
+    -o-transition:0.3s;
+    -moz-transition:0.3s;
+}
+.header-navigation nav ul li:hover:after {
+    width:100%;
+}
+.header-navigation nav ul li a{
+    font-size:14px;
+    letter-spacing: 0.5px;
+    color:#000;
+    transition:0.3s;
+    -webkit-transition:0.3s;
+    -o-transition:0.3s;
+    -moz-transition:0.3s;
+    text-transform: uppercase;
+
+}
+.header-navigation nav ul li a:hover,
+.header-navigation nav ul li a.active {
+    color:#95adbe;
+}
+/* ============================== END NAVIGATION SECTION ==================== */
+/* ================================ START HERO SECTION ====================== */
+.hero-section{
+    background-image: linear-gradient(to left, rgba(255, 253, 253, 0.3),rgba(250, 250, 250, 0.1)), url('assets/img/bg_1.webp');
+    background-attachment: fixed;
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    width:100%;
+    height:100vh;
+    -webkit-display:flex;
+    -o-display:flex;
+    -moz-display:flex;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.hero-section .hero-content{
+    max-width:700px
+}
+.hero-section .hero-content h2{
+    font-size:50px;
+    font-weight: 400;
+    line-height: 60px;
+}
+.hero-section .hero-content p{
+    font-size:14px;
+    color: #464545;
+    font-weight:600;
+    letter-spacing: 0.4px;
+    margin: 20px 0;
+}
+.hero-section .hero-content .view-btn{
+    display: inline-block;
+    margin-right: 20px;
+    background: #95adbe;
+    padding: 20px;
+    border-radius:8px;
+    color:#fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.hero-section .hero-content .explore-btn {
+    font-size:17px;
+    display: inline-block;
+    color:#000;
+    letter-spacing: 1px;
+    transition:0.4s;
+    background: transparent;
+    border: 1px solid #95adbe;
+    padding: 18px;
+    border-radius:8px;
+}
+.hero-section .hero-content .explore-btn:hover {
+    background: #95adbe;
+    color:#fff;
+}
+/* ================================ END HERO SECTION ====================== */
+/* ================================= START PORTFOLIO SECTION =================== */
+.portfolio-section .port-content .icon{
+    width:150px;
+    height:150px;
+    background-color: #ddd;
+    text-align: center;
+    line-height:150px;
+    font-size: 30px;
+    border-radius:50%;
+    margin: 20px auto;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    position:relative;
+}
+.portfolio-section .port-content:hover .icon{
+    background: #95adbe;
+}
+.portfolio-section .port-content .icon:after{
+    position:absolute;
+    content: '';
+    width:40px;
+    height:40px;
+    background:#ff6600;
+    border-radius:50%;
+    z-index: 1;
+    top:50%;
+    left:70%;
+    transform: translate(-50%, -70%);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.portfolio-section .port-content:hover .icon:after{
+    left:60%;
+    transform: translate(-50%, -60%);
+    background:#fff;
+}
+.portfolio-section .port-content{
+    text-align: center;
+    padding: 0 10px;
+}
+.portfolio-section .port-content .icon i{
+    font-size:50px;
+    color:#000;
+    position: relative;
+    z-index: 10;
+}
+.portfolio-section .port-content h2{
+    font-size:22px;
+    margin: 10px 0;
+    color:#000;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+.portfolio-section .port-content p{
+    font-size:16px;
+    color:#494949;
+    letter-spacing: 0.5px;
+    line-height: 22px;
+}
+/* ================================= END PORTFOLIO SECTION =================== */
+/* ============================ START COUNT SECTION ================= */
+.count-section{
+    background-color: #f5f4f0;
+}
+.count-section .count-content {
+    text-align: center;
+    margin: 20px 0;
+}
+.count-section .count-content h1{
+    font-size:40px;
+    color:#000;
+    margin: 10px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+}
+.count-section .count-content h5{
+    font-size:15px;
+    color:#a1a1a1;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+/* ============================ END COUNT SECTION ================= */
+/* =============================== START AUTHOR SECTION ======================= */
+.author-section img{
+    width:100%;
+    border-radius:5px;
+}
+.author-section .author-content {
+    margin: 20px 0;
+}
+.author-section .author-content small{
+    font-size:15px;
+    margin: 8px 0;
+    display: block;
+    color:#ff6600;
+    letter-spacing: 1.5px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.author-section .author-content h2{
+    display: block;
+    font-size:50px;
+    font-weight: 400;
+    margin: 8px 0;
+    margin-bottom:30px;
+    letter-spacing: 1px;
+    line-height: 80px;
+    text-transform: capitalize;
+}
+.author-section .author-content p{
+    font-size:18px;
+    color:#5a5a5a;
+    line-height: 30px;
+    padding: 5px  0;
+    letter-spacing: 0.5px;
+}
+.author-section .author-content .author-btn{
+    display: inline-block;
+    padding:8px 10px;
+    text-transform: uppercase;
+    font-size:14px;
+    color:#fff;
+    background: #95adbe;
+    margin-top: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    border-radius:5px;
+}
+/* =============================== END AUTHOR SECTION ======================= */
+/* ============================ START BOOK SECTION ================= */
+.title {
+    text-align: center;
+    margin-bottom:40px;
+}
+.title small{
+    color:#ff6600;
+    font-size:15px;
+    text-transform:uppercase;
+    padding:8px 0;
+    letter-spacing: 1px;;
+}
+.title h1 {
+    font-size:50px;
+    text-transform: capitalize;
+    display: block;
+    padding:8px 0;
+    font-weight: 400;
+    color:#4b4b4b;
+}
+.book-template {
+    display: flex;
+    justify-content: flex-start;
+    background-color:#f5f4f0;
+    padding: 0 0 0 0;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+.book-template:hover {
+    background-color: #95adbe;
+}
+.book-template:hover .book-content small,
+.book-template:hover .book-content h3{
+    color:#fff;
+}
+.book-template img{
+    width:195px;
+    /* min-height: 100%; */
+    height: 320px;
+}
+.book-template .book-content {
+    padding: 10px;
+}
+.book-section .reverse {
+    flex-flow: row-reverse;
+}
+.book-template .book-content small {
+    font-size:20px;
+    color:#ff6600;
+    padding: 10px 0;
+    display: block;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+.book-template .book-content h3{
+    font-size:22px;
+    display: block;
+    padding: 8px 0;
+    letter-spacing: 0.5px;
+    color:#000;
+    text-transform: capitalize;
+    line-height: 40px;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+.book-template .book-content p{
+    font-size:18px;
+    color:#6b6b6b;
+}
+.book-template .img{
+    position:relative;
+}
+.book-template .img ul {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+.book-template:hover .img ul {
+    opacity: 1;
+    visibility: visible;
+}
+.book-template .img ul li {
+    margin:10px 0;
+}
+.book-template .img ul li a {
+    display: block;
+    margin: 20px 0;
+    width: 40px;
+    height:40px;
+    background:#fff;
+    border-radius:50%;
+    line-height: 40px;
+    text-align:center;
+    color:#000;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+.book-template .img ul li a:hover{
+    background: #ff6600;
+    color:#fff;
+}
+/* ============================ END BOOK SECTION ================= */
+/* ======================= START TESTIMONIAL SECTION ============== */
+.testimonial-section {
+    background-size:cover;
+    background-position:center;
+    background-attachment: fixed;
+    position: relative;
+}
+.testimonial-section .overlay-bg {
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:350px;
+    background-image:linear-gradient(rgba(149, 173, 190, 0.568), rgba(255, 255, 255, 0.432)), url('assets/img/bg4.webp');
+    background-size:cover;
+    background-position:center;
+    background-attachment: fixed;
+    z-index: -1;
+}
+.testimonial-section .test-title {
+    text-align: center;
+    padding:50px 0;
+}
+.testimonial-section .test-title small {
+    font-size:1rem;
+    color:#fff;
+    opacity: 0.8;
+    text-transform:uppercase;
+    display: block;
+    padding:10px 0;
+    letter-spacing: 1.8px;
+}
+.testimonial-section .test-title h1 {
+    font-size:50px;
+    color:#fff;
+    display: block;
+    text-transform:capitalize;
+    font-weight: 400;
+    letter-spacing: 1.4px;
+}
+.testimonial-section .test-content {
+    position:relative;
+    background: #f5f4f0;
+    color:#000;
+    padding:50px 10px 10px 10px;
+    border-radius:8px;
+    margin: 25px 0;
+}
+.writter {
+    display: flex;
+    align-items: center;
+}
+.writter img {
+    width: 80px !important;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 0px 1px 3px #7d7d7d;
+    margin-right: 20px;
+}
+.writter .writter-des h3 {
+    text-align: left !important;
+}
+.testimonial-section .test-content  .quote-icon{
+    position:absolute;
+    width:50px;
+    height: 50px;
+    background: #a7cae4;
+    padding:10px;
+    border-radius:50%;
+    top: -25px;
+    left: 10%;
+}
+.testimonial-section .test-content p {
+    font-size:16px;
+    color:#6b6b6b;
+    letter-spacing: 1px;
+    line-height: 23px;
+    padding-bottom: 20px;
+}
+.testimonial-section .test-content h3,
+.testimonial-section .test-content .right {
+    text-align: right !important;
+    display: block;
+    padding-right:30px;
+    line-height: 22px;
+    letter-spacing: 1px;
+}
+.testimonial-section .test-content h3 {
+    font-size:20px;
+    color:#000;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-align: left !important;
+}
+/* ======================= END TESTIMONIAL SECTION ============== */
+/* =========================== START BLOG SECTION ==================== */
+.blog-section .blog-single-box .blog-img {
+    position:relative;
+    margin-bottom:60px;
+}
+.blog-section .blog-single-box .blog-img img {
+    border-radius:3px 3px 0 0;
+    max-height:250px;
+    object-fit: cover;
+}
+.blog-section .blog-single-box .date {
+    position:absolute;
+    bottom:-60px;
+    left:50%;
+    transform: translateX(-50%);
+    width:110px;
+    height:110px;
+    background:#e7e7e7;
+    color:#fff;
+    margin:15px auto;
+    border-radius:50%;
+    text-align:center;
+    display: block;
+    padding:5px 0;
+    -o-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -webkit-transition: 0.4s;
+            transition: 0.4s;
+}
+.blog-section .blog-single-box:hover .date {
+    background: #a7cae4;
+}
+.blog-section .blog-single-box .date h2 {
+    font-size:35px;
+    letter-spacing: 1.5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.blog-section .blog-single-box .date p {
+    color:#000;
+    display: block;
+    padding:5px 0;
+    font-size:15px;
+    font-weight: 600;
+}
+.blog-section .blog-single-box .date span {
+    display: block;
+    color:#f5f4f0;
+    opacity:0.8;
+}
+.blog-section .blog-single-box {
+    text-align:center;
+}
+.blog-section .blog-single-box h4 {
+    text-transform: capitalize;
+    font-size:1.2rem;
+    color:#000;
+    font-weight:400;
+    padding:8px 0;
+}
+.blog-section .blog-single-box p{
+    font-size:1rem;
+    color:#a1a1a1;
+    letter-spacing: 1.2px;
+    line-height:22px;
+    padding-bottom:10px;
+}
+/* =========================== END BLOG SECTION ==================== */
+/* ============================ START FOOTER  SECTION ===================== */
+footer, .copyright {
+    background: #000;
+    color:#fff;
+}
+footer .footer-content h2 {
+    font-size:1.2rem;
+    padding:5px 0;
+    text-transform: capitalize;
+    letter-spacing: 1.6px;
+    margin: 20px 0;
+    letter-spacing: 0.7px;
+}
+footer .footer-content p{
+    font-size:1rem;
+    color:#d1d1d1;
+    letter-spacing: 1.3px;
+    padding-bottom:20px;
+}
+footer .footer-content .footer-social-icon li {
+    display: inline-block;
+    margin-right: 15px;
+
+}
+footer .footer-content .footer-social-icon li a {
+    display: block;
+    border-radius:50%;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    text-align:center;
+    background: #a7cae4;
+    color:#fff;
+}
+footer .footer-content ul li a {
+    display: block;
+    margin: 15px 0;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    color:#fff;
+    font-size: 14px;
+
+}
+footer .footer-content ul li i{
+    font-size:15px;
+    margin-right:8px;
+}
+.copyright a {
+    color:#a7cae4;
+}
+/* ============================ END FOOTER  SECTION ===================== */
+
+
+/* -------------------------------------- STYLESHEET FOR ABOUT PAGE -------------------------------- */
+.common-hero-section{
+    background-image: linear-gradient(rgba(255, 253, 253, 0.3),rgba(250, 250, 250, 0.5)), url("assets/img/bg4.webp");
+    background-size:cover;
+    background-position:center;
+    width:100%;
+    height:60vh;
+    background-attachment: fixed;
+    position: relative;
+}
+.common-hero-section .hero-title {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.common-hero-section .hero-title ul li,
+.common-hero-section .hero-title ul li a{
+    display: inline-block;
+    position:relative;
+    text-transform: uppercase;
+    color:#000;
+    font-size:15px;
+    font-weight:400;
+    margin: 0 10px 10px 0;
+    transition:0.3s;
+    -webkit-transition:0.3s;
+    -moz-transition:0.3s;
+    -o-transition:0.3s;
+    letter-spacing: 1.4px;
+}
+.common-hero-section .hero-title ul li:after{
+    content: " / ";
+    position:absolute;
+    font-weight: 600;
+    color:#000;
+    top:0;
+    right: -10px;
+}
+.common-hero-section .hero-title ul li a:hover{
+    color:#95adbe;
+}
+.common-hero-section .hero-title h2 {
+    font-size:60px;
+    color:#000;
+    text-transform:capitalize;
+    font-weight:400;
+    letter-spacing:2px;
+}
+/* --------------------------------- Start about section -------------------- */
+.about-section {
+    margin-top: 30px;
+}
+.about-section .about-content {
+    max-width: 900px;
+    margin:auto;
+}
+.about-section .about-content p{ 
+    font-size:18px;
+    color:#868686;
+    letter-spacing:1.2px;
+    line-height: 23px;
+    margin-bottom:14px;
+    font-family: initial;
+}
+.about-section .about-content h3 {
+    font-size:1.5rem;
+    font-weight: 400;
+    text-transform:capitalize;
+    margin:20px 0;
+}
+.about-section .about-content .fa-quote-left {
+    color:#ff6600;
+    font-size:35px;
+    margin-right:15px;
+}
+/* ================================== START AUTHOR PAGE ===================== */
+.common-hero-section.authors {
+    background-image: linear-gradient(rgba(255, 253, 253, 0.3),rgba(250, 250, 250, 0.5)), url("assets/img/img1.webp");
+}
+.author-section2 .author-content {
+    overflow: hidden;
+    background:#fff;
+    box-shadow: 1px 2px 4px 2px #ddd;
+    transition:0.3s;
+    -webkit-transition:0.3s;
+    -moz-transition:0.3s;
+    -o-transition:0.3s;
+    position:relative;
+}
+.author-section2 .author-content img{
+    width:100%;
+    display: block;
+    transition:0.3s;
+    -webkit-transition:0.3s;
+    -moz-transition:0.3s;
+    -o-transition:0.3s;
+    position:relative;
+}
+.author-section2 .author-content:hover img{
+    transform: translateY(-10px) scale(1.1);
+}
+.author-section2 .author-content .author-text {
+    padding:30px 10px;
+    text-align:center;
+}
+.author-section2 .author-content .author-text h2 {
+    font-size:1.4rem;
+    text-transform:capitalize;
+    margin:8px 0;
+    transition:0.4s;
+    -webkit-transition:0.4s;
+    -moz-transition:0.4s;
+    -o-transition:0.4s;
+    font-weight:600;
+    letter-spacing:1.2px;
+}
+.author-section2 .author-content .author-text p{
+    font-size:14px;
+    color:#7a7a7a;
+    letter-spacing: 1px;
+    line-height:22px;
+    margin-bottom:14px;
+    font-weight:600;
+}
+.author-section2 .author-content:hover .author-text h2 {
+    color:#95adbe;
+}
+.author-section2 .author-content .author-text .view-btn {
+    background-color:#95adbe;
+    padding:8px 10px;
+    font-size:12px;
+    color:#fff;
+    border-radius:5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.author-section2 .author-content .author-img {
+    position: relative;
+}
+.author-section2 .author-content .author-img .author-icon {
+    position:absolute;
+    bottom:10px;
+    left:50%;
+    transform: translateX(-50%);
+    transition:0.4s;
+    -webkit-transition:0.4s;
+    -moz-transition:0.4s;
+    width: 100%;
+    -o-transition:0.4s;
+    text-align: center;
+}
+.author-section2 .author-content:hover .author-img .author-icon {
+    bottom:20px;
+}
+.author-section2 .author-content .author-img .author-icon ul li {
+    display: inline-block;
+}
+.author-section2 .author-content .author-img .author-icon ul li a {
+    width: 30px;
+    height:30px;
+    background:#fff;
+    line-height: 30px;
+    text-align:center;
+    display: block;
+    margin:5px;
+    border-radius:50%;
+    transition:0.4s;
+    -webkit-transition:0.4s;
+    -moz-transition:0.4s;
+    -o-transition: 0.4s;
+}
+.author-section2 .author-content:hover .author-img .author-icon ul li a {
+    color:#fff;
+    background:#95adbe;
+}
+.author-link-section .author-link {
+    position: relative;
+}
+.author-link-section .author-link  li{
+    display: block;
+    padding:8px 0;
+}
+.author-link-section .author-link  li a {
+    display: block;
+    color:#95adbe;
+    font-size:15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* =============================    START BOOKS PAGE ==================== */
+.common-hero-section.books {
+    background-image: linear-gradient(rgba(255, 253, 253, 0.4),rgba(250, 250, 250, 0)), url("assets/img/bg5.webp");
+}
+.book-section .books-text p{
+    font-size:20px;
+    letter-spacing: 1.2px;
+    text-align: center;
+    display: block;
+}
+.book-section .books-select select {
+    width: 300px;
+    border: 1px solid transparent;
+    outline: none;
+    padding: 5px 10px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    display: block;
+    margin: auto;
+}
+.books-select select:focus {
+    border: 1px solid #2e2e2e;
+    border-radius: 4px;
+}
+.pagination {
+    text-align: center;
+}
+.pagination li{
+    display: inline-block;
+    margin: 2px;
+}
+.pagination li a {
+    display: block;
+    width:30px;
+    height:30px;
+    text-align:center;
+    color:#95adbe;
+    border-radius:50%;
+    border: 1px solid #95adbe;
+    font-size:20px;
+}
+.pagination li a.active {
+    background:#95adbe;
+    color:#fff;
+}
+
+/* ================================== START CONTACT SECTION ========================== */
+.contact-section {
+    background-color: #eeededb9;
+}
+.contact-section .contact-address .contact-icon{
+    width:100px;
+    height:100px;
+    background:#95adbe;
+    line-height:100px;
+    text-align:center;
+    border-radius:50%;
+    margin: 15px auto;
+}
+.contact-section .contact-address .contact-icon  i {
+    font-size:50px;
+    line-height:100px;
+    color:#fff;
+}
+.contact-section .contact-address .contact-text p {
+    font-size:17px;
+    color:#000;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.contact-section .contact-address .contact-text span {
+    color:#b5b9bd;
+}
+.contact-section .contact-address .contact-text a {
+    display: inline-block;
+    color:#95adbe;
+    font-size:14px;
+}
+
+.contact-section .contact-form {
+    background-color: #fff;
+    box-shadow: 1px 1px 5px #ccc;
+    padding:15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.contact-section .contact-form h2 {
+    font-size:30px;
+    font-weight:400;
+    margin: 20px 0;
+}
+.contact-section .contact-form .input-box {
+    margin: 10px 0;
+}
+.contact-section .contact-form .input-box label {
+    display: block;
+    font-size:15px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color:#95adbe;
+    padding-bottom: 10px;
+
+}
+.contact-section .contact-form .input-box input,
+.contact-section .contact-form .input-box textarea {
+    width:100%;
+    border: none;
+    border-bottom: 2px solid #e4e4e4ec;
+    outline:none;
+    border-radius:2px;
+    background: transparent;
+    padding:8px 0px;
+    transition: 0.5s;
+    font-size:14px;
+    letter-spacing: 0.8px;
+}
+.contact-section .contact-form .input-box input:focus,
+.contact-section .contact-form .input-box textarea:focus {
+    border-bottom:2px solid #95adbe;
+}
+.contact-section .contact-form .input-box input::placeholder,
+.contact-section .contact-form .input-box textarea::placeholder {
+    color:#6b6b6b;
+    text-transform: capitalize;
+}
+.message {
+    background: #95adbe;
+    color:#fff;
+    font-size:14px;
+    text-transform:uppercase;
+    letter-spacing: 1px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    padding:8px 10px;
+    border-radius:3px;
+}
+/* =====================================  STYLE FOR COMMING SOON ========================= */
+.common-hero-section.soon {
+    background-image: linear-gradient(to right , rgba(255, 253, 253, 0.4),rgba(250, 250, 250, 0.1)), url("assets/img/bg5.webp");
+}
+.soon-section .soon-content {
+    margin: 25px 0;
+}
+.soon-section .soon-text  h1 {
+    font-size:40px;
+    text-align:right;
+    margin-right:20px;
+    font-weight:400;
+}
+.soon-section .book-template img {
+    width:300px;
+    max-height:400px;
+}
+.soon-section .book-template p {
+    margin-top: 20px;
+    line-height: 24px;
+    letter-spacing: 0.7px;
+}
+
+/* ============================ STYLE FOR TOP SELLER PAGE ================== */
+.seller-template .book-template {
+    flex-direction: column;
+    align-items: stretch;
+}
+.seller-template .book-template .img img {
+    width: 100% !important;
+  }
+.side-bar .search-box {
+    position:relative;
+    margin-top: 10px;
+}
+.side-bar .search-box input {
+    position:relative;
+    width: 100%;
+    display: block;
+    padding: 15px  10px;
+    margin-bottom: 20px;
+    border-radius:5px;
+    outline:none;
+    border:1px solid #ddd;
+    font-size:16px;
+}
+.side-bar .submit {
+    position:absolute;
+    top:15px;
+    right:10px;
+    color:#797d80;
+    font-size:18px;
+}
+.side-bar h2 {
+    font-size:30px;
+    color:#000;
+    margin:30px 0;
+    display: block;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.side-bar ul li {
+    margin: 10px 0;
+}
+.side-bar .category-1 ul li a {
+    font-size:18px;
+    color:#464545;
+    font-weight:500;
+    letter-spacing: 0.8px;
+    display: block;
+    transition:0.4s;
+    -webkit-transition:0.4s;
+    -moz-transition:0.4s;
+    -o-transition:0.4s;
+    width:100%;
+}
+.side-bar .category-1 ul li a:hover {
+    color:#a7cae4;
+}
+.side-bar .category-1 ul li a i {
+    font-size:14px;
+    text-align: right;
+    float: right;
+    color:#ccc;
+    font-weight: 600;
+}
+.side-bar .category-1 ul li {
+    border-bottom: 1px solid #838181;
+    padding-bottom: 10px;
+}
+
+.side-bar .category-2 ul li a {
+    font-size:17px;
+    color:#a7cae4;
+    font-weight: 400;
+    letter-spacing: 1px;
+    display: block;
+}
+.seller-section .pagination {
+    text-align:left;
+    margin-left: 30px;
+}
