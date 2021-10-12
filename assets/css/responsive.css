@@ -106,6 +106,9 @@
     }
 }
 @media screen and (max-width:600px) {
+    .common-hero-section .hero-title ul li, .common-hero-section .hero-title ul li {
+        font-size:12px;
+    }
     .common-hero-section .hero-title h2 {
         font-size:35px;
     }
